@@ -1,12 +1,15 @@
 import type { FunctionComponent } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
 
-interface typeAbacate {
-  abacate: string
+const App: FunctionComponent = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-const Teste: FunctionComponent<typeAbacate> = ({ abacate }) => {
-  const teste: string = abacate
-  return <h1>{teste}</h1>
-}
-
-export default Teste
+export default App

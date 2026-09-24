@@ -1,0 +1,57 @@
+.categories-content{
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    "item1 item2 item2"
+    "item3 item3 item3"
+    "item4 item4 item5";
+    gap: 10px;
+    height: 50%;
+}
+
+.categories-item{
+    display: flex;
+    background-color: #808080;
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.item-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-grid > img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.item-grid h3{
+    position: absolute;
+    font-size: 1.5rem;
+    background-color: white;
+    padding-inline: 10px;
+    border-radius: 0.5rem;
+}
+
+#item1{
+    grid-area: item1;
+}
+#item2{
+    grid-area: item2;
+}
+#item3{
+    grid-area: item3;
+}
+#item4{
+    grid-area: item4;
+}
+#item5{
+    grid-area: item5;
+}
