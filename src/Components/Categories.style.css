@@ -11,11 +11,9 @@
 
 .categories-item{
     display: flex;
-    background-color: #808080;
     height: 10rem;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
     border-radius: 30px;
 }
 
@@ -23,6 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .item-grid > img{
@@ -35,9 +34,10 @@
 .item-grid h3{
     position: absolute;
     font-size: 1.5rem;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.808);
     padding-inline: 10px;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
+    opacity: 0;
 }
 
 #item1{
@@ -54,4 +54,17 @@
 }
 #item5{
     grid-area: item5;
+}
+
+ .item-grid:hover > img{
+    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+    filter: blur(4px);
+}
+.item-grid:hover > h3{
+    transform: scale(1.2);
+    transition: all 0.4s ease-in;
+    filter: brightness(1.5);
+    z-index: 10;
+    opacity: 1;
 }

@@ -37,12 +37,18 @@ const Header = () => {
         <h2 className='header-items'>CLUB CLOTHING</h2>
       </div>
       <div className='header-items'>
-        <div className='header-item'>Explorar</div>
-        <div className='header-item'>Login</div>
-        <div className='header-item'>Criar conta</div>
+        <div className='header-item'>
+          <p>Explorar</p>
+        </div>
+        <div className='header-item'>
+          <p>Login</p>
+        </div>
+        <div className='header-item'>
+          <p>Criar conta</p>
+        </div>
         <div className='header-item'>
           <IoCartOutline size='2rem' />
-          Carrinho
+          <p>Carrinho</p>
         </div>
       </div>
     </div>
