@@ -1,9 +1,9 @@
 import './Categories.style.css'
-import type { Category } from '../types/category.types'
+import type { Category } from '../../../types/category.types'
 import { useEffect, useState } from 'react'
 import { collection, getDocs } from 'firebase/firestore'
-import { db } from '../config/firebase.config'
-import { capitalize } from '../helpers/captalize'
+import { db } from '../../../config/firebase.config'
+import { capitalize } from '../../../helpers/captalize'
 
 const Categories = () => {
   const [category, setCategory] = useState<Category[]>([])

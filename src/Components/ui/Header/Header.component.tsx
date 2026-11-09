@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom'
 import './header.style.css'
 import { IoCartOutline } from 'react-icons/io5'
 
 const Header = () => {
   return (
     <div className='header-container'>
-      <div className='header-title'>
+      <Link className='header-title' to='/'>
         <svg
           width='40'
           height='40'
@@ -35,17 +36,17 @@ const Header = () => {
           />
         </svg>
         <h2 className='header-items'>CLUB CLOTHING</h2>
-      </div>
+      </Link>
       <div className='header-items'>
         <div className='header-item'>
           <p>Explorar</p>
         </div>
-        <div className='header-item'>
-          <p>Login</p>
-        </div>
-        <div className='header-item'>
+        <Link to='/login' className='header-item'>
+          Login
+        </Link>
+        <Link to='/create-account' className='header-item'>
           <p>Criar conta</p>
-        </div>
+        </Link>
         <div className='header-item'>
           <IoCartOutline size='2rem' />
           <p>Carrinho</p>
